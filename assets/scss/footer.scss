@@ -1,0 +1,20 @@
+#layout-footer{
+    color:black;
+    font-weight: 600;
+    a{
+        color: black;
+        text-decoration: none;
+        font-weight: 600;
+    }
+
+    background:blue;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: flex-start;
+
+    .footer-nav{
+        ul{
+            list-style: none;
+        }
+    }
+}
