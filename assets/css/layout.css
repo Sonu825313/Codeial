@@ -3,5 +3,5 @@ body {
   font-size: large;
   /* text-align: center; */ }
   body #layout-main {
-    height: 70%;
+    height: 100%;
     background-color: lightcyan; }
