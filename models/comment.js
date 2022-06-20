@@ -5,6 +5,7 @@ const commentSchema = new mongoose.Schema({
         type:String,
         required:true
     },
+    // comments belongs to a user..
     user : {
         type:mongoose.Schema.Types.ObjectId,
         ref:'User'
