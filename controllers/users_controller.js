@@ -1,6 +1,8 @@
 // const { profile } = require('console');
 // const { nextTick } = require('process');
 const User = require('../models/user');
+const fs = require('fs');
+const path = require('path');
 
 // Let's keep it same as before
 module.exports.profile = function(req, res){
@@ -37,6 +39,10 @@ if(req.user.id == req.params.id){
         user.email = req.body.email;
 
         if(req.file){
+
+            if(user.avatar){
+               fs.unlinkSync(path.join(__dirname,'..',user.avatar));
+            }
             // this is saving the path of the uploaded file into the avatar field in the user
             user.avatar = User.avatarPath + '/' + req.file.filename;
         }
