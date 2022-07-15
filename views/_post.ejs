@@ -10,6 +10,7 @@
         <small>
             <%= post.user.name %>
         </small>
+    </p>
         <div class="post-comments">
             <% if(locals.user) { %>
                 <form action="/comments/create" method="POST">
@@ -29,6 +30,5 @@
                     </ul>
                 </div>
         </div>
-    </p>
   
 </li>
