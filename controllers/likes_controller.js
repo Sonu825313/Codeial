@@ -28,7 +28,7 @@ module.exports.toggleLike = async function(req, res){
             likeable.save();
 
             existingLike.remove();
-            deleted: true
+            deleted: true;
 
         }else{
             // else make a new like..
